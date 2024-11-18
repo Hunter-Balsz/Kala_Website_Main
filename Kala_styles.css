@@ -10,8 +10,14 @@ body {
 
 img {
     float: left;
+    clear: left;
     margin-right: 2em;
-    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin: 1%;
+    border: solid #000000;
+    gap: 20px;
 }
 
 main{
@@ -26,11 +32,11 @@ a:visited {
     color: #ffffff;
 }
 
-/*Class links*/
-.header {
-    color: #ffe4c4
+footer {
+    margin-left: 1%;
 }
 
+/*Class links*/
 .link {
     color: rgb(66, 111, 189);
 }
@@ -39,37 +45,109 @@ ul.dog {
     list-style-image: url("Kala.html/Images/Dog_emoji.png");
 }
 
+.PictureText {
+    clear: left;
+}
+
+.PictureHeader {
+    clear: left;
+}
+
+.KalaInterestsList {
+    padding: 1%;
+}
+
 /*Navigation Menu*/
 #nav_menu {
     padding-bottom: 2em;
     margin: auto;
-    width: 33%;
+    width: 100%;
 }
 
 #nav_menu ul {
     list-style-type: none;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
 }
 
 #nav_menu ul li {
-    float: left;
+    flex-basis: 33%;
 }
 
 #nav_menu ul li a {
     text-align: center;
     display: block;
-    width: 175px;
     padding: 1em 0;
     text-decoration: none;
     background-color: #5a5a5a;
     color: #ffffff;
     font-weight: bold;
-    border-right: 2px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
 }
 
 #nav_menu ul li a:hover {
     background-color: #878787
 }
 
-#nav_menu ul li a.lastitem {
-    border-right: none;
+#Images {
+    float: left;
+    margin-right: 2em;
+    max-width: 400px;
+}
+
+#BodyPictures {
+    height: 400px;
+    display: grid;
+    grid-template: 300px 300px 300px / 20% 15% 20%;
+    grid-gap: 20px 100px;
+    clear: left;
+}
+
+div#sections {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+}
+
+aside#KalaBackground {
+    flex-basis: 50%;
+}
+
+section#FunFacts {
+    flex-basis: 50%;
+}
+
+#BeachCaption {
+    clear: left;
+    margin-right: 20%;
+    margin-left: 1%;
+}
+
+#HomeHeader {
+    margin-left: 1%;
+}
+
+/*Media Content*/
+@media only screen and (max-width: 770px) {
+    div#sections {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #nav_menu ul {
+        flex-direction: column;
+    }
+    #nav_menu ul li a {
+        border-right: none;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    #nav_menu ul li a.lastitem {
+        border-bottom: none;
+    }
 }
