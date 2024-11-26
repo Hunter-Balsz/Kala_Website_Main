@@ -20,11 +20,11 @@ img {
     gap: 20px;
 }
 
-main{
+main {
     clear: left;
 }
 
-header{
+header {
     clear: left;
 }
 
@@ -54,10 +54,12 @@ ul.dog {
 }
 
 .KalaInterestsList {
-    padding: 1%;
+    padding: 1.5%;
+    border: solid black;
+    margin-top: 1%;
 }
 
-/*Navigation Menu*/
+/*Navigation Menu and id links*/
 #nav_menu {
     padding-bottom: 2em;
     margin: auto;
@@ -89,9 +91,10 @@ ul.dog {
 }
 
 #nav_menu ul li a:hover {
-    background-color: #878787
+    background-color: #878787;
 }
 
+/*End of nav menu*/
 #Images {
     float: left;
     margin-right: 2em;
@@ -130,6 +133,12 @@ section#FunFacts {
     margin-left: 1%;
 }
 
+/*Fonts*/
+#merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    font-style: normal;
+}
 /*Media Content*/
 @media only screen and (max-width: 770px) {
     div#sections {
@@ -142,6 +151,7 @@ section#FunFacts {
     #nav_menu ul {
         flex-direction: column;
     }
+
     #nav_menu ul li a {
         border-right: none;
         border-bottom: 2px solid #ffffff;
