@@ -2,22 +2,10 @@
 
 /*Selector links*/
 body {
-    background-color: rgb(41, 41, 41);
+    background-color: #0c0068;
     color: rgb(205, 205, 205);
     font-size: large;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-img {
-    float: left;
-    clear: left;
-    margin-right: 2em;
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    margin: 1%;
-    border: solid #000000;
-    gap: 20px;
 }
 
 main {
@@ -34,6 +22,18 @@ a:visited {
 
 footer {
     margin-left: 1%;
+}
+
+img {
+    float: left;
+    clear: left;
+    margin-right: 2em;
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    margin: 1%;
+    border: solid #000000;
+    gap: 20px;
 }
 
 /*Class links*/
@@ -57,6 +57,18 @@ ul.dog {
     padding: 1.5%;
     border: solid black;
     margin-top: 1%;
+}
+
+.Kala_places {
+    padding: 1.5%;
+    border: solid black;
+    margin-top: 1%;
+    float: left;
+}
+
+.KalaPlacesPictures {
+    max-width: 400px;
+    float: left;
 }
 
 /*Navigation Menu and id links*/
@@ -83,7 +95,7 @@ ul.dog {
     display: block;
     padding: 1em 0;
     text-decoration: none;
-    background-color: #5a5a5a;
+    background-color: hsl(225, 100%, 50%);
     color: #ffffff;
     font-weight: bold;
     border-right: 1px solid #ffffff;
@@ -131,6 +143,21 @@ section#FunFacts {
 
 #HomeHeader {
     margin-left: 1%;
+}
+
+#KalaPlacesParagraphOne {
+    clear: left;
+    padding: 1.5%;
+    border: solid black;
+    margin-top: 1%;
+}
+
+#KalaPlacesParagraphTwo {
+    clear: left;
+}
+
+#KalaPlacesParagraphThree {
+    clear: left;
 }
 
 /*Fonts*/
